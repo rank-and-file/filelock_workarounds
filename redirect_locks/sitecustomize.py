@@ -8,8 +8,8 @@ except ModuleNotFoundError as e:
     import_suceeded = False
     
 if import_suceeded:
-    LOCK_ROOT = Path('/home/brank/.hf_locks/datasets')
-    PREFIXES = ['/fast/brank/cache/huggingface/datasets', '/fast/brank/cache/huggingface/hub']
+    LOCK_ROOT = Path('/home/brank/.huggingface_mappedlocks')
+    PREFIXES = ['/home/brank/.cache/huggingface']
     LOCK_ROOT.mkdir(parents=True, exist_ok=True)
 
     def _map(path: str) -> str:
