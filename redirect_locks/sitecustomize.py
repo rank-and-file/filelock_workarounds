@@ -8,7 +8,7 @@ except ModuleNotFoundError as e:
     import_suceeded = False
     
 if import_suceeded:
-    LOCK_ROOT = Path('/home/brank/.huggingface_mappedlocks')
+    LOCK_ROOT = Path('/opt/huggingface_mappedlocks')
     PREFIXES = ['/home/brank/.cache/huggingface']
     LOCK_ROOT.mkdir(parents=True, exist_ok=True)
 
